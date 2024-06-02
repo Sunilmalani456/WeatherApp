@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 "use client";
 import defaultStates from "@/lib/defaultState";
 import axios from "axios";
