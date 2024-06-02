@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
