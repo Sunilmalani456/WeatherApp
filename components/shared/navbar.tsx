@@ -1,11 +1,8 @@
-"use client";
-
-import router from "next/router";
-import React from "react";
-import { Button } from "../ui/button";
 import { github } from "@/lib/icons";
-import ThemeDropdown from "./themeDropdown";
+import Link from "next/link";
+import { Button } from "../ui/button";
 import SearchDialog from "./SearchDialog ";
+import ThemeDropdown from "./themeDropdown";
 
 const NavBar = () => {
   return (
@@ -17,13 +14,10 @@ const NavBar = () => {
         <div className="btn-group flex items-center gap-2">
           <ThemeDropdown />
 
-          <Button
-            className="source-code-btn flex items-center gap-2"
-            onClick={() => {
-              router.push("https//github.com");
-            }}
-          >
-            {github} Source Code
+          <Button asChild className="source-code-btn flex items-center gap-2">
+            <Link target="_blank" href="https://github.com/sunilmalani456">
+              {github} Source Code
+            </Link>
           </Button>
         </div>
       </div>

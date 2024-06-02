@@ -1,14 +1,15 @@
 "use client";
 
+
+import { useTheme } from "next-themes";
+import { Moon, Sun } from "lucide-react";
+import { Button } from "../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu";
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
-import { Button } from "../ui/button";
+} from "../ui/dropdown-menu";
 
 const ThemeDropdown = () => {
   const { setTheme } = useTheme();
